@@ -28,7 +28,7 @@ fun main() {
         Expense(4, "Museum", ben.id, 1000, CostSplitter.splitEvenly(1000, everyone)),
     )
 
-    // associateBy baut eine Map: id → Traveler, damit wir Namen schnell finden.
+    // associateBy baut eine Map: id → Traveler, damit wir Namen schnell finden konnen.
     val byId = travelers.associateBy { it.id }
     fun name(id: Long) = byId.getValue(id).name // lokale Funktion mit "="-Kurzform
 
